@@ -25,8 +25,7 @@
           rounded
           text-teal-200
           border-teal-400
-          hover:text-white
-          hover:border-white
+          hover:text-white hover:border-white
         "
       >
         <svg
@@ -46,8 +45,7 @@
           class="
             block
             mt-4
-            lg:inline-block
-            lg:mt-0
+            lg:inline-block lg:mt-0
             text-teal-200 text-white
             mr-4
           "
@@ -59,8 +57,7 @@
           class="
             block
             mt-4
-            lg:inline-block
-            lg:mt-0
+            lg:inline-block lg:mt-0
             text-teal-200 text-white
             mr-4
           "
@@ -73,8 +70,7 @@
             block
             mt-4
             mr-4
-            lg:inline-block
-            lg:mt-0
+            lg:inline-block lg:mt-0
             text-teal-200 text-white
           "
         >
@@ -90,17 +86,35 @@
       <div class="flex">
         <nuxt-link
           to="/icon"
-          class="leading-none hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 ml-3"
+          class="
+            leading-none
+            hover:text-teal-500 hover:bg-white
+            mt-4
+            lg:mt-0
+            ml-3
+          "
           ><IconTwitter
         /></nuxt-link>
         <nuxt-link
           to="/icon"
-          class="leading-none hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 ml-3"
+          class="
+            leading-none
+            hover:text-teal-500 hover:bg-white
+            mt-4
+            lg:mt-0
+            ml-3
+          "
           ><IconInstagram
         /></nuxt-link>
         <nuxt-link
           to="/icon"
-          class="leading-none hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 ml-3"
+          class="
+            leading-none
+            hover:text-teal-500 hover:bg-white
+            mt-4
+            lg:mt-0
+            ml-3
+          "
           ><IconLinkedin
         /></nuxt-link>
       </div>
