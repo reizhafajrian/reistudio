@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import Head from 'next/head'
 import { ReactNode } from 'react'
+import Footer from './Footer'
 import Header from './Header'
 
 interface Props {
@@ -20,6 +21,9 @@ const Layout = ({ children }: Props) => {
         <Header />
       </Box>
       {children}
+      <Box bg="brand.500">
+        <Footer />
+      </Box>
     </>
   )
 }

@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Layout>
-        <Box bg="brand.500" h="6xl">
+        <Box bg="brand.500" h="sm">
           Welcome
         </Box>
       </Layout>

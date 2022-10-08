@@ -30,7 +30,6 @@ const Header = () => {
       w="full"
     >
       <Logo />
-
       <Box display={['none', 'none', 'none', 'block']}>
         <NavLists />
       </Box>
