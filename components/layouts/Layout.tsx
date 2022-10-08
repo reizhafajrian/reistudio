@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react'
 import Head from 'next/head'
 import { ReactNode } from 'react'
 import Header from './Header'
@@ -15,7 +16,9 @@ const Layout = ({ children }: Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Box pos="relative" mx="auto" maxW="container.xl">
+        <Header />
+      </Box>
       {children}
     </>
   )
