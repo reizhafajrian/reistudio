@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <Flex
       px="4"
-      py={[3, 4, 4, 8]}
+      py={{ base: 3, md: 4, '2xl': 8 }}
       color="brand.100"
       alignItems="center"
       justifyContent="space-between"
@@ -30,12 +30,12 @@ const Header = () => {
       w="full"
     >
       <Logo />
-      <Box display={['none', 'none', 'none', 'block']}>
+      <Box display={{ base: 'none', md: 'block' }}>
         <NavLists />
       </Box>
 
       <Button
-        display={['block', 'block', 'block', 'none']}
+        display={{ base: 'block', md: 'none' }}
         variant="unstyled"
         ref={btnRef}
         onClick={onOpen}

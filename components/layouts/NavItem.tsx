@@ -13,7 +13,7 @@ const NavItem = (props: Props) => {
   return (
     <NextLink href={props.href} passHref>
       <Link
-        fontSize={['sm', 'sm', 'md', 'lg']}
+        fontSize={{ base: 'sm', lg: 'md', '2xl': 'lg' }}
         // _hover={{ fontWeight: 'bold' }}
         _activeLink={{ fontWeight: 'bold' }}
         aria-current={props.href === asPath ? 'page' : undefined}

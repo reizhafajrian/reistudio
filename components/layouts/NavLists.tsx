@@ -5,8 +5,8 @@ const NavLists = () => {
   return (
     <Stack
       alignItems="center"
-      direction={['column', 'column', 'column', 'row']}
-      spacing={[4, 4, 6]}
+      direction={{ base: 'column', md: 'row' }}
+      spacing={{ base: '4', lg: '6' }}
     >
       <NavItem href="/" title="home" />
       <NavItem href="/about" title="about" />
