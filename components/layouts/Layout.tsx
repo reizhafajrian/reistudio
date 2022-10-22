@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import Head from 'next/head'
 import { ReactNode } from 'react'
+import ContactForm from './ContactForm'
 import Footer from './Footer'
 import Header from './Header'
 
@@ -16,11 +17,11 @@ const Layout = ({ children }: Props) => {
         <meta name="description" content="About My Company" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Box pos="relative" mx="auto" maxW="container.xl">
+      <Box pos="sticky" zIndex={2} top={0} maxW="container.xl" mx="auto">
         <Header />
       </Box>
       {children}
+      <ContactForm />
       <Box bg="brand.500">
         <Footer />
       </Box>
