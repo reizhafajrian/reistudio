@@ -40,6 +40,7 @@ const Footer = () => {
         alignItems="center"
         justifyContent="space-between"
         display={{ base: 'none', lg: 'flex' }}
+        mt={40}
       >
         <NavLists />
         <Text fontSize={{ base: 'xs', xl: 'lg' }} letterSpacing="wide">
