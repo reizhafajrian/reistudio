@@ -23,7 +23,7 @@ const Hero = () => {
           ARTICLES
         </Heading>
         <Button
-          onClick={() => router.replace('/')}
+          onClick={() => router.replace('#blogs')}
           title="Start reading"
           variant="primary"
           arrow

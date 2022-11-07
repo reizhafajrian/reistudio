@@ -14,12 +14,13 @@ import {
   Text,
 } from '@chakra-ui/react'
 import Image from 'next/future/image'
+import Pagination from '../Pagination'
 import ArticleCard from './ArticleCard'
 
 const Content = () => {
   return (
-    <Box px={4} mb={12} mx="auto" maxWidth="container.xl">
-      <Box mt={{ base: 10, md: 28 }} textAlign={{ md: 'center' }}>
+    <Box px={4} mb={12} mx="auto" maxWidth="container.xl" id="blogs">
+      <Box pt={{ base: 10, md: 28 }} textAlign={{ md: 'center' }}>
         <Heading
           as="h2"
           fontSize={{ base: 18, md: 24, lg: 42 }}
@@ -90,6 +91,7 @@ const Content = () => {
           </TabPanel>
         </TabPanels>
       </Tabs>
+      <Pagination />
     </Box>
   )
 }

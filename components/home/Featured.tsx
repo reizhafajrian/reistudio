@@ -1,8 +1,10 @@
 import { Box, Flex, Grid, Heading, Text } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 import Button from '../Button'
 import FeaturedCard from '../works/FeaturedCard'
 
 const Featured = () => {
+  const router = useRouter()
   return (
     <Box
       px={4}
@@ -33,7 +35,12 @@ const Featured = () => {
         <FeaturedCard bgImageUrl="/assets/images/featured4.png" />
       </Grid>
       <Flex justifyContent="center">
-        <Button title="See more" variant="secondary" arrow />
+        <Button
+          onClick={() => router.replace('/works')}
+          title="See more"
+          variant="secondary"
+          arrow
+        />
       </Flex>
     </Box>
   )

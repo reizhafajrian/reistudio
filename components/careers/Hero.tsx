@@ -23,7 +23,7 @@ const Hero = () => {
           CAREERS CENTER
         </Heading>
         <Button
-          onClick={() => router.replace('/')}
+          onClick={() => router.replace('#careers')}
           title="Surf down"
           variant="primary"
           arrow

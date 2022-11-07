@@ -1,4 +1,5 @@
 import { Box, Grid, Heading, Text } from '@chakra-ui/react'
+import Pagination from '../Pagination'
 import CareerCard from './CareerCard'
 
 const Content = () => {
@@ -8,8 +9,10 @@ const Content = () => {
       mb={{ base: 12, md: 36, lg: 64 }}
       mx="auto"
       maxWidth="container.xl"
+      id="careers"
+      pt={{ base: 10, md: 28 }}
     >
-      <Box mt={{ base: 10, md: 28 }} textAlign={{ md: 'center' }}>
+      <Box textAlign={{ md: 'center' }}>
         <Heading
           as="h2"
           fontSize={{ base: 18, md: 24, lg: 42 }}
@@ -50,6 +53,7 @@ const Content = () => {
           bgImageUrl="/assets/images/featured4.png"
         />
       </Grid>
+      <Pagination />
     </Box>
   )
 }

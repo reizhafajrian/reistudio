@@ -38,7 +38,7 @@ const WhyUs = () => {
         pos="relative"
         w="full"
         h={{ md: '50%', lg: '75%' }}
-        minH={{ base: '2xs', lg: 'xs' }}
+        minH={{ base: '3xs', lg: 'xs' }}
       >
         <Image
           style={{

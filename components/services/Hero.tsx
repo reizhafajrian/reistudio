@@ -23,7 +23,7 @@ const Hero = () => {
           OUR SERVICES
         </Heading>
         <Button
-          onClick={() => router.replace('/')}
+          onClick={() => router.replace('#contact')}
           title="Get free consultation here"
           variant="primary"
           arrow

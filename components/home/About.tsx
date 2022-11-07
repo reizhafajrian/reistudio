@@ -7,19 +7,20 @@ const About = () => {
   const router = useRouter()
   return (
     <Grid
-      gap={{ base: 6, lg: 16 }}
+      gap={{ base: 4, lg: 16 }}
       templateColumns={{ sm: 'repeat(2, 1fr)' }}
       maxWidth="container.xl"
       mx="auto"
-      my={{ base: 4, lg: 20 }}
+      py={{ base: 4, lg: 20 }}
       pb={8}
       px={4}
+      id="about"
     >
       <GridItem
         pos="relative"
         w="full"
         h="full"
-        minH={{ base: '2xs', lg: 'xs' }}
+        minH={{ base: '3xs', lg: 'xs' }}
       >
         <Image
           style={{ objectFit: 'cover', borderRadius: 8 }}
@@ -48,7 +49,7 @@ const About = () => {
         </Text>
         <Flex>
           <Button
-            onClick={() => router.replace('/')}
+            onClick={() => router.replace('/about')}
             title="About [ N A M E ]"
             variant="secondary"
             arrow

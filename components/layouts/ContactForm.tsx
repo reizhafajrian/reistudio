@@ -27,10 +27,11 @@ const ContactForm = () => {
   return (
     <Grid
       gap={{ base: 6, lg: 16 }}
+      id="contact"
       templateColumns={{ sm: 'repeat(2, 1fr)' }}
       maxWidth="container.xl"
       mx="auto"
-      my={{ base: 4, lg: 20 }}
+      py={{ base: 4, lg: 20 }}
       pb={8}
       px={4}
     >

@@ -1,4 +1,3 @@
-import Layout from '@/components/layouts/Layout'
 import Hero from '@/components/services/Hero'
 import Methodology from '@/components/services/Methodology'
 import Services from '@/components/services/Services'
@@ -8,7 +7,7 @@ import { NextPage } from 'next'
 
 const ServicesPage: NextPage = () => {
   return (
-    <Layout>
+    <>
       <Hero />
       <Services />
       <Technology />
@@ -22,7 +21,7 @@ const ServicesPage: NextPage = () => {
         mb={16}
       />
       <Methodology />
-    </Layout>
+    </>
   )
 }
 

@@ -30,7 +30,7 @@ const FeaturedCard = (props: Props) => {
         bgSize="cover"
         borderRadius={4}
         textAlign="start"
-        h={{ base: '52', md: '2xs', lg: 'xs' }}
+        h={{ base: '3xs', md: '2xs', lg: 'xs' }}
       >
         <Grid
           h="full"

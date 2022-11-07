@@ -10,7 +10,7 @@ const Hero = () => {
       color="brand.100"
       bgColor="#000000"
       bgImage="/assets/images/home-hero.png"
-      h={{ base: '50vh', sm: '75vh', md: '50vh', lg: '100vh' }}
+      h={{ base: '2xs', sm: 'sm', md: 'md', lg: 'xl', xl: '100vh' }}
       bgPosition="bottom"
       bgRepeat="no-repeat"
       bgSize="contain"
@@ -42,7 +42,7 @@ const Hero = () => {
           />
         </Heading>
         <Button
-          onClick={() => router.replace('/')}
+          onClick={() => router.replace('#about')}
           title="Explore more"
           variant="primary"
           arrow
