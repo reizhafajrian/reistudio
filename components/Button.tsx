@@ -9,6 +9,7 @@ interface Props {
   arrow?: boolean
   big?: boolean
   onClick?: () => void
+  isLoading?: boolean
 }
 
 const Button = (props: Props) => {
@@ -25,6 +26,7 @@ const Button = (props: Props) => {
       onHoverEnd={() => setIsHover(false)}
     >
       <ChakraButton
+        disabled={props.isLoading}
         onClick={props.onClick}
         variant={props.variant}
         size={{
