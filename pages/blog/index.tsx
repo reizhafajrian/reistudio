@@ -1,11 +1,11 @@
 import Content from '@/components/blogs/Content'
-import Hero from '@/components/blogs/Hero'
+import HeroLayout from '@/components/layouts/HeroLayout'
 import { NextPage } from 'next'
 
 const Blog: NextPage = () => {
   return (
     <>
-      <Hero />
+      <HeroLayout title="ARTICLES" buttonTitle="Start reading" href="#blogs" />
       <Content />
     </>
   )

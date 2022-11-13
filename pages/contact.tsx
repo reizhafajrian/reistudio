@@ -1,19 +1,7 @@
-import { Grid, Heading } from '@chakra-ui/react'
+import HeroLayout from '@/components/layouts/HeroLayout'
 
 const Contact = () => {
-  return (
-    <Grid bgColor="brand.500" color="brand.100" placeItems="center" minH="50vh">
-      <Heading
-        as="h1"
-        fontSize={{ base: 16, md: 28, lg: 40, '2xl': 52 }}
-        fontWeight="extrabold"
-        letterSpacing="widest"
-        mb={6}
-      >
-        CONTACT US
-      </Heading>
-    </Grid>
-  )
+  return <HeroLayout title="CONTACT US" />
 }
 
 export default Contact

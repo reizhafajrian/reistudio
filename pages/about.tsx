@@ -1,14 +1,17 @@
 import Description from '@/components/about/Description'
-import Hero from '@/components/about/Hero'
 import Statistic from '@/components/about/Statistic'
 import Team from '@/components/about/Team'
 import WhyUs from '@/components/about/WhyUs'
+import HeroLayout from '@/components/layouts/HeroLayout'
 import { NextPage } from 'next'
 
 const About: NextPage = () => {
   return (
     <>
-      <Hero />
+      <HeroLayout
+        title="ABOUT US"
+        subtitle="We are here to help you find the best way to provide your best services with simplest solution through software and technology!"
+      />
       <Statistic />
       <Description />
       <WhyUs />

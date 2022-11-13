@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 interface Props {
   href: string
   title: string
+  onClose?: () => void
 }
 
 const NavItem = (props: Props) => {
@@ -14,11 +15,11 @@ const NavItem = (props: Props) => {
     <NextLink href={props.href} passHref>
       <Link
         fontSize={{ base: 'sm', lg: 'md', '2xl': 'lg' }}
-        // _hover={{ fontWeight: 'bold' }}
         _activeLink={{ fontWeight: 'bold' }}
         aria-current={props.href === asPath ? 'page' : undefined}
         textTransform="uppercase"
         letterSpacing="widest"
+        onClick={props.onClose}
       >
         {props.title}
       </Link>

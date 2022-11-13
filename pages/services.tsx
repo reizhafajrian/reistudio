@@ -1,4 +1,4 @@
-import Hero from '@/components/services/Hero'
+import HeroLayout from '@/components/layouts/HeroLayout'
 import Methodology from '@/components/services/Methodology'
 import Services from '@/components/services/Services'
 import Technology from '@/components/services/Technology'
@@ -8,7 +8,11 @@ import { NextPage } from 'next'
 const ServicesPage: NextPage = () => {
   return (
     <>
-      <Hero />
+      <HeroLayout
+        title="OUR SERVICES"
+        buttonTitle="Get free consultation here"
+        href="#contact"
+      />
       <Services />
       <Technology />
       <Box
