@@ -12,7 +12,6 @@ import {
   Textarea,
   useToast,
 } from '@chakra-ui/react'
-import axios from 'axios'
 import { useState } from 'react'
 import Button from '../Button'
 import SocialLinks from './SocialLinks'
@@ -23,42 +22,11 @@ const ContactForm = () => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  const [loading, setLoading] = useState(false)
 
-  const check = name.length > 0 && email.length > 0 && message.length > 0
 
   const handleSubmit = async () => {
-    const data = { name, email, message }
-    try {
-      if (check) {
-        setLoading(true)
+    window.open(`https://api.whatsapp.com/send?phone=+6281213465905&text=Hello%20saya%20${name}%20dengan%20email%20${email}%20${encodeURI(message)}`, '_blank')
 
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-          const res: any = await axios.post('/api/message', data)
-          setLoading(false)
-
-          setName('')
-          setEmail('')
-          setMessage('')
-          toast({
-            position: 'top',
-            title: res.data.message,
-            status: 'success',
-          })
-        } else {
-          throw new Error('Invalid Email Address')
-        }
-      } else {
-        throw new Error('Please input all form')
-      }
-    } catch (error: any) {
-      setLoading(false)
-      toast({
-        position: 'top',
-        title: error.message,
-        status: 'error',
-      })
-    }
   }
 
   return (
@@ -113,7 +81,6 @@ const ContactForm = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               fontSize={{ base: 14, lg: 24 }}
-              disabled={loading}
             />
           </FormControl>
           <FormControl>
@@ -126,7 +93,6 @@ const ContactForm = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               fontSize={{ base: 14, lg: 24 }}
-              disabled={loading}
             />
           </FormControl>
           <FormControl>
@@ -139,7 +105,6 @@ const ContactForm = () => {
               onChange={(e) => setMessage(e.target.value)}
               size="xs"
               fontSize={{ base: 14, lg: 24 }}
-              disabled={loading}
             />
           </FormControl>
           <Flex>
@@ -147,7 +112,6 @@ const ContactForm = () => {
               onClick={handleSubmit}
               title="Send message"
               variant="secondary"
-              isLoading={loading}
               arrow
             />
           </Flex>

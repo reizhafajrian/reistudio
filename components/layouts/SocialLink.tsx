@@ -1,24 +1,27 @@
-import { Button } from '@chakra-ui/react'
-import Image from 'next/image'
-import Link from 'next/link'
+import { Button } from '@chakra-ui/react';
+import Link from 'next/link';
+import { IconType } from 'react-icons';
 
 interface Props {
   href: string
-  icon: string
+  icon: IconType
 }
 
+
+
+
 const SocialLink = (props: Props) => {
+  const Icon = props?.icon
   return (
     <Link href={props.href} target="_blank">
       <Button variant="unstyled" size={{ base: 'xs', lg: 'md', '2xl': 'lg' }}>
-        <Image
-          src={`/assets/icons/social-${props.icon}.svg`}
-          alt={props.icon}
-          layout='fill'
-        />
+        {
+          <Icon size={45} /> ?? null
+        }
       </Button>
     </Link>
   )
 }
+
 
 export default SocialLink
