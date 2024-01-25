@@ -2,11 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // images: {
-  //   loader: 'akamai',
-  //   path: '',
-  //   allowFutureImage: true,
-  // },
+  images: {
+    unoptimized:true,
+  },
   basePath:"",
   exportPathMap: async function(
     defaultPathMap,
