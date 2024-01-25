@@ -1,5 +1,5 @@
 import { Button } from '@chakra-ui/react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import Link from 'next/link'
 
 interface Props {
@@ -14,7 +14,7 @@ const SocialLink = (props: Props) => {
         <Image
           src={`/assets/icons/social-${props.icon}.svg`}
           alt={props.icon}
-          fill
+          layout='fill'
         />
       </Button>
     </Link>

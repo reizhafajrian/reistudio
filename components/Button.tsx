@@ -1,6 +1,6 @@
-import { Box, Button as ChakraButton, chakra, Text } from '@chakra-ui/react'
+import { Box, Button as ChakraButton, Text, chakra } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import { useState } from 'react'
 
 interface Props {
@@ -58,11 +58,10 @@ const Button = (props: Props) => {
               ml={3}
             >
               <Image
-                src={`/assets/icons/${
-                  props.variant === 'primary'
+                src={`/assets/icons/${props.variant === 'primary'
                     ? 'arrow-right-black'
                     : 'arrow-right'
-                }.svg`}
+                  }.svg`}
                 width={24}
                 height={24}
                 alt="arrow"

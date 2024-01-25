@@ -1,5 +1,5 @@
 import { Flex, Grid, GridItem, Heading, Text } from '@chakra-ui/react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Button from '../Button'
 
@@ -24,9 +24,12 @@ const About = () => {
       >
         <Image
           style={{ objectFit: 'cover', borderRadius: 8 }}
-          src="/assets/images/about_image.png"
+          src="/assets/images/company.png"
           alt="about"
-          fill
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+
         />
       </GridItem>
       <GridItem
@@ -40,7 +43,7 @@ const About = () => {
           fontSize={{ base: 18, md: 24, lg: 42 }}
           fontWeight="extrabold"
         >
-          COMPANY NAME
+          Rei Studio
         </Heading>
         <Text fontSize={{ base: 12, lg: 24 }} letterSpacing="wide">
           Business need to get connect and give the best for its users. So here
@@ -50,7 +53,7 @@ const About = () => {
         <Flex>
           <Button
             onClick={() => router.replace('/about')}
-            title="About [ N A M E ]"
+            title="About Rei Studio"
             variant="secondary"
             arrow
           />

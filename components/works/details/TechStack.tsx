@@ -5,9 +5,14 @@ import {
   Heading,
   ListItem,
   UnorderedList,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
+import { useRouter } from 'next/router';
+import { IWorks, works } from './Hero';
 
 const TechStack = () => {
+  const router = useRouter()
+  const slug = router.query.slug as keyof IWorks;
+  const project = works?.[slug]
   return (
     <Grid
       columnGap={{ base: 6, lg: 10 }}
@@ -51,12 +56,9 @@ const TechStack = () => {
           Technologies
         </Heading>
         <UnorderedList fontSize={{ md: 18, lg: 32 }} ml={{ base: 6, lg: 12 }}>
-          <ListItem>Figma</ListItem>
-          <ListItem>HTML 5</ListItem>
-          <ListItem>CSS 3</ListItem>
-          <ListItem>jQuery</ListItem>
-          <ListItem>PHP</ListItem>
-          <ListItem>MySQL</ListItem>
+          {
+            project.tech.technologies.map(res => (<ListItem key={res}>{res}</ListItem>))
+          }
         </UnorderedList>
       </GridItem>
     </Grid>

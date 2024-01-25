@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Link, Text } from '@chakra-ui/react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import NextLink from 'next/link'
 import Button from '../Button'
 
@@ -73,7 +73,7 @@ const ClientItem = ({ small, name }: { small?: boolean; name: string }) => {
             src={`/assets/images/client_${name}.png`}
             alt="avoskin"
             style={{ objectFit: 'contain' }}
-            fill
+            layout='fill'
           />
         </Link>
       </NextLink>

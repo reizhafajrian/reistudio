@@ -10,7 +10,7 @@ import {
   Flex,
   useDisclosure,
 } from '@chakra-ui/react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useRef } from 'react'
 import Logo from './Logo'
@@ -51,7 +51,7 @@ const Header = () => {
           onClick={onOpen}
           size="xs"
         >
-          <Image src="/assets/icons/menu-hamburger.svg" alt="menu" fill />
+          <Image src="/assets/icons/menu-hamburger.svg" alt="menu" layout='fill' />
         </Button>
         <Drawer
           isOpen={isOpen}

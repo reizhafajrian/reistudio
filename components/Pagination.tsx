@@ -1,5 +1,5 @@
 import { Button, Flex } from '@chakra-ui/react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 
 const page = [1, 2, 3, 4, 5]
 

@@ -1,6 +1,6 @@
 import Button from '@/components/Button'
 import { Grid, GridItem, Heading, Text } from '@chakra-ui/react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 
 const Description = () => {
   return (
@@ -25,7 +25,7 @@ const Description = () => {
           style={{ objectFit: 'contain' }}
           src="/assets/images/about_comp.png"
           alt="about"
-          fill
+          layout='fill'
         />
       </GridItem>
 

@@ -1,5 +1,5 @@
-import { Box, Grid, GridItem, Heading, Text } from '@chakra-ui/react'
-import Image from 'next/future/image'
+import { Box, Grid, Heading, Text } from '@chakra-ui/react'
+import { ServiceItem } from '../home/Services'
 
 const Services = () => {
   return (
@@ -24,24 +24,15 @@ const Services = () => {
           software
         </Text>
       </Box>
+
       <Grid
         mb={{ base: 6, md: 9 }}
         templateColumns={{ md: 'repeat(3, 1fr)' }}
         gap={{ base: 4, lg: 6 }}
       >
-        <GridItem pos="relative" minH={{ base: 'xs', md: '2xs', lg: 'sm' }}>
-          <Image src="/assets/images/services_webdev.png" alt="webdev" fill />
-        </GridItem>
-        <GridItem pos="relative" minH={{ base: 'xs', md: '2xs', lg: 'sm' }}>
-          <Image src="/assets/images/services_webapp.png" alt="webdev" fill />
-        </GridItem>
-        <GridItem pos="relative" minH={{ base: 'xs', md: '2xs', lg: 'sm' }}>
-          <Image
-            src="/assets/images/services_mobileapp.png"
-            alt="webdev"
-            fill
-          />
-        </GridItem>
+        <ServiceItem image="services_webdev" service_name="Web Development" />
+        <ServiceItem image="services_webapp" service_name="Web App" />
+        <ServiceItem image="services_mobileapp" service_name="Mobile App" />
       </Grid>
     </Box>
   )

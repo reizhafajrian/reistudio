@@ -1,20 +1,14 @@
 import {
   Box,
-  Button,
   Grid,
   Heading,
-  Menu,
-  MenuButton,
-  MenuList,
   Tab,
-  TabList,
   TabPanel,
   TabPanels,
   Tabs,
-  Text,
+  Text
 } from '@chakra-ui/react'
-import Image from 'next/future/image'
-import Pagination from '../Pagination'
+import Image from 'next/image'
 import FeaturedCard from './FeaturedCard'
 
 const Content = () => {
@@ -42,7 +36,7 @@ const Content = () => {
       </Box>
 
       <Tabs variant="unstyled">
-        <TabList
+        {/* <TabList
           gap={{ md: 16 }}
           display={{ base: 'none', md: 'flex' }}
           justifyContent="center"
@@ -52,8 +46,8 @@ const Content = () => {
           <TabItem title="Mobile App" />
           <TabItem title="Website" />
           <TabItem title="Web App" />
-        </TabList>
-        <Menu>
+        </TabList> */}
+        {/* <Menu>
           <MenuButton
             as={Button}
             bgColor="brand.100"
@@ -64,16 +58,16 @@ const Content = () => {
             rightIcon={<ChevronDownIcon />}
           >
             Categories
-          </MenuButton>
-          <MenuList>
+          </MenuButton> */}
+        {/* <MenuList>
             <TabList color="brand.300" flexDir="column">
               <TabItem title="All" />
               <TabItem title="Mobile App" />
               <TabItem title="Website" />
               <TabItem title="Web App" />
             </TabList>
-          </MenuList>
-        </Menu>
+          </MenuList> */}
+        {/* </Menu> */}
         <TabPanels>
           <TabPanel>
             <Grid
@@ -82,13 +76,13 @@ const Content = () => {
               templateColumns={{ md: 'repeat(2, 1fr)' }}
               gap={{ base: 4, lg: 6 }}
             >
-              <FeaturedCard bgImageUrl="/assets/images/featured1.png" />
-              <FeaturedCard bgImageUrl="/assets/images/featured2.png" />
-              <FeaturedCard bgImageUrl="/assets/images/featured3.png" />
-              <FeaturedCard bgImageUrl="/assets/images/featured4.png" />
+              <FeaturedCard router={"kultra"} bgImageUrl="/assets/images/kultra.png" />
+              <FeaturedCard router='alojiwa' bgImageUrl="/assets/images/alojiwa.png" />
+              {/* <FeaturedCard bgImageUrl="/assets/images/featured3.png" />
+              <FeaturedCard bgImageUrl="/assets/images/featured4.png" /> */}
             </Grid>
           </TabPanel>
-          <TabPanel>
+          {/* <TabPanel>
             <p>two!</p>
           </TabPanel>
           <TabPanel>
@@ -96,10 +90,10 @@ const Content = () => {
           </TabPanel>
           <TabPanel>
             <p>four!</p>
-          </TabPanel>
+          </TabPanel> */}
         </TabPanels>
       </Tabs>
-      <Pagination />
+      {/* <Pagination /> */}
     </Box>
   )
 }

@@ -1,8 +1,16 @@
-import Button from '@/components/Button'
 import { Grid, GridItem, Heading, Text } from '@chakra-ui/react'
-import Image from 'next/future/image'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
+import { IWorks, works } from './Hero'
 
 const Description = () => {
+  const router = useRouter()
+  const slug = router.query.slug as keyof IWorks;
+  const project = works?.[slug]
+
+
+
+
   return (
     <Grid
       columnGap={{ base: 6, lg: 10 }}
@@ -23,9 +31,11 @@ const Description = () => {
       >
         <Image
           style={{ objectFit: 'contain' }}
-          src="/assets/images/about_comp.png"
-          alt="about"
-          fill
+          src={`${project?.image}`}
+          width={100}
+          height={100}
+          alt="kultra"
+          layout='fill'
         />
       </GridItem>
 
@@ -41,7 +51,7 @@ const Description = () => {
           fontSize={{ base: 18, md: 24, lg: 42 }}
           fontWeight="extrabold"
         >
-          Eaten
+          {project?.name}
         </Heading>
         <Text
           as="i"
@@ -49,7 +59,7 @@ const Description = () => {
           fontSize={{ base: 12, md: 14, lg: 32 }}
           letterSpacing="wide"
         >
-          “An app to simplify your meal preparation”
+          {project?.short_desc}
         </Text>
       </GridItem>
 
@@ -66,12 +76,9 @@ const Description = () => {
           fontSize={{ base: 12, lg: 24 }}
           letterSpacing="wide"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nunc non
-          integer arcu dictumst justo aliquet. Habitasse pellentesque proin
-          aliquet sit auctor erat pellentesque mattis. Aliquam et tempor fusce
-          ac nibh.
+          {project?.desc}
         </Text>
-        <Button title="Visit site" variant="secondary" arrow />
+        {/* <Button title="Visit site" variant="secondary" arrow /> */}
       </GridItem>
     </Grid>
   )

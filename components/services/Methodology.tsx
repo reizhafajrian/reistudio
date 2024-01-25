@@ -3,11 +3,9 @@ import {
   Grid,
   GridItem,
   Heading,
-  ListItem,
-  Text,
-  UnorderedList,
+  Text
 } from '@chakra-ui/react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 
 const Methodology = () => {
   return (
@@ -18,12 +16,10 @@ const Methodology = () => {
           fontSize={{ base: 18, md: 24, lg: 42 }}
           fontWeight="extrabold"
           mb={{ base: 2, md: 4 }}
+          height={{ base: 100, md: 140 }}
         >
           OUR METHODOLOGY
         </Heading>
-        <Text fontSize={{ base: 12, lg: 24 }} mb={{ base: 9, md: 12 }}>
-          We develop your need with latest technology
-        </Text>
       </Box>
       <Grid
         mb={{ base: 6, md: 9 }}
@@ -44,7 +40,7 @@ const Methodology = () => {
                 style={{ objectFit: 'cover' }}
                 src="/assets/images/services_methodology.png"
                 alt="technology"
-                fill
+                layout='fill'
               />
             </Box>
             <Box
@@ -59,12 +55,9 @@ const Methodology = () => {
         </GridItem>
         <GridItem>
           <Text fontSize={{ base: 12, lg: 24 }} mb={{ base: 4, md: 12 }}>
-            We create engaging applications with intelligent cloud solutions —
-            leveraging our expertise in: geo-fencing, advanced image
-            recognition, beacons, automation, customer identification, payment
-            gateways and sophisticated analytics. Front End Mobile Platforms:
+            At Rei Studio, our methodology is a unique blend of cutting-edge technology and strategic planning, ensuring that every project we undertake is not only innovative but also meticulously tailored to meet your specific needs. Our process is designed to be adaptive, responsive, and forward-looking, allowing us to create solutions that are both effective today and sustainable tomorrow.
           </Text>
-          <Text fontSize={{ base: 12, lg: 24 }}>
+          {/* <Text fontSize={{ base: 12, lg: 24 }}>
             Front End Mobile Platforms:
           </Text>
           <UnorderedList fontSize={{ base: 12, lg: 24 }}>
@@ -78,7 +71,7 @@ const Methodology = () => {
               Tablet App Development. Windows Desktop and MacOS App Development.
             </ListItem>
             <ListItem>Web App & CMS Development (Java, GoLang).</ListItem>
-          </UnorderedList>
+          </UnorderedList> */}
         </GridItem>
       </Grid>
     </Box>

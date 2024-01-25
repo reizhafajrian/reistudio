@@ -1,6 +1,5 @@
 import Description from '@/components/about/Description'
 import Statistic from '@/components/about/Statistic'
-import Team from '@/components/about/Team'
 import WhyUs from '@/components/about/WhyUs'
 import HeroLayout from '@/components/layouts/HeroLayout'
 import { NextPage } from 'next'
@@ -15,7 +14,7 @@ const About: NextPage = () => {
       <Statistic />
       <Description />
       <WhyUs />
-      <Team />
+      {/* <Team /> */}
     </>
   )
 }

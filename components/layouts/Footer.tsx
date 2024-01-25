@@ -23,7 +23,7 @@ const Footer = () => {
         fontWeight="extrabold"
         fontSize={{ base: 'lg', lg: '2xl', '2xl': '4xl' }}
       >
-        Company Name
+        Rei Studio
       </Heading>
       <Text
         mb={{ base: 3, md: 6 }}
@@ -44,7 +44,7 @@ const Footer = () => {
       >
         <NavLists />
         <Text fontSize={{ base: 'xs', xl: 'lg' }} letterSpacing="wide">
-          Copyright &copy; 2022 Company Name
+          Copyright &copy; 2022 Rei Studio
         </Text>
       </Flex>
     </Box>

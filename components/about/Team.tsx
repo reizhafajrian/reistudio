@@ -1,6 +1,6 @@
 import { Box, chakra, Flex, Grid, Heading, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import { useState } from 'react'
 import Button from '../Button'
 
@@ -94,7 +94,7 @@ const Item = () => {
         style={{ objectFit: 'contain' }}
         src="/assets/images/team_image.png"
         alt="team"
-        fill
+        layout='fill'
       />
     </MainContainer>
   )

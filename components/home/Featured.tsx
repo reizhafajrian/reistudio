@@ -29,10 +29,10 @@ const Featured = () => {
         templateColumns={{ md: 'repeat(2, 1fr)' }}
         gap={{ base: 4, lg: 6 }}
       >
-        <FeaturedCard bgImageUrl="/assets/images/featured1.png" />
-        <FeaturedCard bgImageUrl="/assets/images/featured2.png" />
-        <FeaturedCard bgImageUrl="/assets/images/featured3.png" />
-        <FeaturedCard bgImageUrl="/assets/images/featured4.png" />
+        <FeaturedCard router='kultra' bgImageUrl="/assets/images/kultra.png" />
+        <FeaturedCard router='alojiwa' bgImageUrl="/assets/images/alojiwa.png" />
+        {/* <FeaturedCard bgImageUrl="/assets/images/featured3.png" />
+        <FeaturedCard bgImageUrl="/assets/images/featured4.png" /> */}
       </Grid>
       <Flex justifyContent="center">
         <Button

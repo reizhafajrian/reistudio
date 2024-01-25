@@ -1,11 +1,12 @@
 import { Box, chakra, Grid, GridItem, Heading, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
 interface Props {
   bgImageUrl: string
+  router: string
 }
 
 const FeaturedCard = (props: Props) => {
@@ -19,7 +20,7 @@ const FeaturedCard = (props: Props) => {
   return (
     <CardContainer
       initial={false}
-      onClick={() => router.push('/works/1')}
+      onClick={() => router.push('/works/' + props.router)}
       animate={isHover ? 'hover' : 'rest'}
       onHoverStart={() => setIsHover(true)}
       onHoverEnd={() => setIsHover(false)}

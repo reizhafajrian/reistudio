@@ -12,8 +12,8 @@ const NavLists = ({ onClose }: { onClose?: () => void }) => {
       <NavItem onClose={onClose} href="/about" title="about" />
       <NavItem onClose={onClose} href="/services" title="services" />
       <NavItem onClose={onClose} href="/works" title="works" />
-      <NavItem onClose={onClose} href="/blog" title="blog" />
-      <NavItem onClose={onClose} href="/careers" title="careers" />
+      {/* <NavItem onClose={onClose} href="/blog" title="blog" /> */}
+      {/* <NavItem onClose={onClose} href="/careers" title="careers" /> */}
       <NavItem onClose={onClose} href="/contact" title="contact" />
     </Stack>
   )

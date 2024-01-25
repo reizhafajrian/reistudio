@@ -3,11 +3,9 @@ import {
   Grid,
   GridItem,
   Heading,
-  ListItem,
-  Text,
-  UnorderedList,
+  Text
 } from '@chakra-ui/react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 
 const Technology = () => {
   return (
@@ -18,12 +16,13 @@ const Technology = () => {
           fontSize={{ base: 18, md: 24, lg: 42 }}
           fontWeight="extrabold"
           mb={{ base: 2, md: 4 }}
+          height={{ base: 100, md: 140 }}
         >
           OUR TECHNOLOGY
         </Heading>
-        <Text fontSize={{ base: 12, lg: 24 }} mb={{ base: 9, md: 12 }}>
+        {/* <Text fontSize={{ base: 12, lg: 24 }} mb={{ base: 9, md: 12 }}>
           We develop your need with latest technology
-        </Text>
+        </Text> */}
       </Box>
 
       <Grid
@@ -45,7 +44,7 @@ const Technology = () => {
                 style={{ objectFit: 'cover' }}
                 src="/assets/images/services_technology.png"
                 alt="technology"
-                fill
+                layout='fill'
               />
             </Box>
             <Box
@@ -60,12 +59,9 @@ const Technology = () => {
         </GridItem>
         <GridItem>
           <Text fontSize={{ base: 12, lg: 24 }} mb={{ base: 4, md: 12 }}>
-            We create engaging applications with intelligent cloud solutions —
-            leveraging our expertise in: geo-fencing, advanced image
-            recognition, beacons, automation, customer identification, payment
-            gateways and sophisticated analytics. Front End Mobile Platforms:
+            At Rei Studio, &ldquo;Our Technology&ldquo; isn&apos;t just a phrase; it&apos;s a commitment to delivering unparalleled solutions that stand at the cutting edge of the digital world. We understand that the landscape of technology is ever-evolving, and staying ahead means leveraging the most advanced tools and methodologies available. Our approach is rooted in a deep-seated desire to not just meet, but exceed, the diverse needs of our clients through innovation and foresight.
           </Text>
-          <Text fontSize={{ base: 12, lg: 24 }}>
+          {/* <Text fontSize={{ base: 12, lg: 24 }}>
             Front End Mobile Platforms:
           </Text>
           <UnorderedList fontSize={{ base: 12, lg: 24 }}>
@@ -79,7 +75,7 @@ const Technology = () => {
               Tablet App Development. Windows Desktop and MacOS App Development.
             </ListItem>
             <ListItem>Web App & CMS Development (Java, GoLang).</ListItem>
-          </UnorderedList>
+          </UnorderedList> */}
         </GridItem>
       </Grid>
     </Box>

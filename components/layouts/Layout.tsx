@@ -13,9 +13,9 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Head>
-        <title>Company Profile</title>
-        <meta name="description" content="About My Company" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Rei Studio</title>
+        <meta name="description" content="About Rei Studio" />
+        <link rel="icon" href="/assets/images/company.png" />
       </Head>
       <Header />
       {children}

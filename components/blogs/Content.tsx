@@ -13,7 +13,7 @@ import {
   Tabs,
   Text,
 } from '@chakra-ui/react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import Pagination from '../Pagination'
 import ArticleCard from './ArticleCard'
 
